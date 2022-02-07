@@ -1,25 +1,8 @@
 :root {
     --dark-color: #222222;
     --light-color: #e6e6e6;
-    
-}
-h1, h2, p {
-}
-    
-
-
-h1 {
-    font-size: 3.5rem;
-    color: var(--dark-color);
-}
-
-h2 {
-    font-size: 2.2rem;
-    color: var(--dark-color);
-}
-
-p {
-    font-size: 1.2rem;
+    --ff-primary: 'Raleway', sans-serif;
+    --ff-title: 'Domine', serif;
 }
 
 *, *::before,
@@ -31,27 +14,52 @@ p {
 
 }
 
-header {
-    background-color: var(--light-color);
-}
 
-h1 {
+h1, h2, p {
+    font-family: var(--ff-primary);
     color: var(--dark-color);
 }
+
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: var(--ff-title);
+    letter-spacing: 0.4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+header {
+    background-color: var(--light-color);
+    border-bottom: 6px solid rgb(0, 0, 150);
+    box-shadow: 5px 5px 7px 0px #444444;
+}
+
+header h1 {
+    text-align: center;
+    padding: 2.5rem;
+}
+
+
 main {
-    width: 100%;
-    border: 1px solid red;
+    width: 90%;
+    max-width: 100rem;
+    height: 100vh;
+    margin: auto;
     display: flex;
     flex-direction: row-reverse;
-    height: 100vw;
     padding: 1.6rem;
-
+    
 }
 
 .about-me {
     flex: 1;
-    border-left: 3px solid red;
     margin-left: 24px;
+
 }
 .about-me > * {
     margin: 1.2rem 1.6rem;
@@ -67,55 +75,64 @@ main {
 .column-articles {
     display: flex;
     flex-direction: column;
-    
 }
+
 
 .column-articles * {
     flex: 1;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.column-articles *:hover {
+    background-color: rgb(228, 228, 228);
+    
 }
 
 
 footer {
     position: fixed;
+    bottom: 0;
     display: flex;
     flex-direction: row;
-    bottom: 0;
-    height: 4em;
-    width: 100vw;
+    width: 100%;
     background-color: #e6e6e6;
 }
 
 footer p {
     flex: 9; 
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    font-size: 0.8rem;
+
 }
 
-footer img {
+footer i {
     flex: 1;
     justify-content:center;
     align-self: center;
-    border: 1px solid red;
-    
+    width: auto;
+    opacity: 0.9;   
 }
+
+
+
 
 @media screen and (max-width: 800px) {
     main {
-        flex-wrap: wrap; 
-        flex-direction: column-reverse;
+        flex-direction: column;
+        flex: 1;   
+    }
+    main * {
+        flex: 1;
+        margin-bottom: 100px;
+        
         
     }
-    main > div {
-        flex: 1 0 100%;
-        min-width: 90vw;
-        background-color: aquamarine;
-    }
 
-    footer {
-        height: 8em;
-    }
-
-    
-
-
+   
 }
 
 
