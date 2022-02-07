@@ -1,4 +1,8 @@
+/* https://unsplash.com/photos/KGzXJB6zneM Ivana Cajina */
+
+
 :root {
+    --dark-extra-color: #111111;
     --dark-color: #222222;
     --light-color: #e6e6e6;
     --ff-primary: 'Raleway', sans-serif;
@@ -34,14 +38,21 @@ h2 {
 }
 
 header {
-    background-color: var(--light-color);
-    border-bottom: 6px solid rgb(0, 0, 150);
-    box-shadow: 5px 5px 7px 0px #444444;
+    background-image: url(/images/ivana-cajina-KGzXJB6zneM-unsplash.jpg);
+    background-position:top;
+    background-size: cover;
+    height: 400px;
+    background-repeat:repeat;
+    /*
+    border-bottom: 3px solid rgb(0, 0, 150); */
+    box-shadow: -2px 2px 5px 0px #444444;
+    
 }
 
 header h1 {
     text-align: center;
     padding: 2.5rem;
+    color: var(--dark-extra-color);
 }
 
 
@@ -97,7 +108,7 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #e6e6e6;
+    background-color: var(--dark-color);
 }
 
 footer p {
@@ -106,19 +117,22 @@ footer p {
     align-items: center;
     margin-left: 40px;
     font-size: 0.8rem;
+    color:var(--light-color);
 
 }
-
 footer i {
-    flex: 1;
-    justify-content:center;
+    flex: 2;
     align-self: center;
     width: auto;
     opacity: 0.9;   
+    color: var(--light-color);
 }
 
-
-
+img {
+    height: 25rem;
+    filter: grayscale(100%);
+    width: auto;
+}
 
 @media screen and (max-width: 800px) {
     main {
