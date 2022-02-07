@@ -1,20 +1,121 @@
+:root {
+    --dark-color: #222222;
+    --light-color: #e6e6e6;
+    
+}
+h1, h2, p {
+}
+    
 
 
+h1 {
+    font-size: 3.5rem;
+    color: var(--dark-color);
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+*, *::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    margin: 0;
+
+}
+
+header {
+    background-color: var(--light-color);
+}
+
+h1 {
+    color: var(--dark-color);
+}
 main {
     width: 100%;
     border: 1px solid red;
     display: flex;
     flex-direction: row-reverse;
+    height: 100vw;
+    padding: 1.6rem;
+
 }
 
 .about-me {
     flex: 1;
+    border-left: 3px solid red;
+    margin-left: 24px;
+}
+.about-me > * {
+    margin: 1.2rem 1.6rem;
+    line-height: 2rem;
 }
 
 .content-container {
     flex: 2;
-    background-color: aliceblue;
+    display: flex;
+    
 }
 
+.column-articles {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.column-articles * {
+    flex: 1;
+}
+
+
+footer {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    height: 4em;
+    width: 100vw;
+    background-color: #e6e6e6;
+}
+
+footer p {
+    flex: 9; 
+}
+
+footer img {
+    flex: 1;
+    justify-content:center;
+    align-self: center;
+    border: 1px solid red;
+    
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-wrap: wrap; 
+        flex-direction: column-reverse;
+        
+    }
+    main > div {
+        flex: 1 0 100%;
+        min-width: 90vw;
+        background-color: aquamarine;
+    }
+
+    footer {
+        height: 8em;
+    }
+
+    
+
+
+}
 
 
