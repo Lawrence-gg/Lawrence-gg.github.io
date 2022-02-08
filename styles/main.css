@@ -225,6 +225,17 @@ td,th {
     width: auto !important;
 }
 
+.border-example1 {
+    display: inline;
+    border-bottom: 3px solid black;
+    background-color: whitesmoke;
+}
+.border-example2 {
+    display: inline;
+    border: 2px dotted lightcoral;
+    background-color: whitesmoke;
+}
+
 
 
 
