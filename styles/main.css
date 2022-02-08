@@ -18,7 +18,7 @@
 }
 
 body {
-    height:max-content;  
+    height: 100%; 
 }
 
 h1 {font-size: 4.5rem};
@@ -72,14 +72,20 @@ nav > * {
     font-family: var(--ff-primary);
 }
 
-li {
+li * {
     float: right;
     margin: auto 2.5rem;
     padding: 1rem;
 }
+a {
+    list-style: none;
+    color: var(--light-color);
+}
 
-li:hover {
-    transform: scale(1.2);
+
+
+a:hover {
+    transform: scale(1.0);
     color:coral;
     cursor: pointer;
 }
@@ -153,14 +159,16 @@ footer p {
     margin-left: 45%;
     font-size: 0.8rem;
     color:var(--light-color);
+    height: 4%;
 
 }
-footer i {
-    flex: 2;
+footer a {
+    flex: 1;
     align-self: center;
     width: auto;
     opacity: 0.9;   
     color: var(--light-color);
+    justify-content: center;
 }
 
 i:hover {
