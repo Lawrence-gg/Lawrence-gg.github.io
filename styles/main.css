@@ -51,6 +51,11 @@ header {
 .photo-credit {
     font-size: 1em;
     margin-bottom: 200px;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    opacity: 0.9;
+    border-radius: 4px;
+    padding: 0.5rem;
 }
 
 header h1 {
@@ -104,6 +109,7 @@ main {
 .about-me {
     flex: 1;
     margin-left: 24px;
+    margin-bottom: 200px;
 
 }
 .about-me > * {
@@ -113,9 +119,9 @@ main {
 }
 
 .about-me img {
-    width: 75%;
+    width: 90%;
     height: auto;
-    filter: grayscale(20%);
+    border-radius: 4px;
 }
 
 .content-container {
@@ -155,7 +161,7 @@ footer {
 footer p {
     flex: 9; 
     display: flex;
-    align-items: center;
+    align-self: center;
     margin-left: 45%;
     font-size: 0.8rem;
     color:var(--light-color);
@@ -282,12 +288,13 @@ td,th {
     }
 
     footer {
-        height: 3rem;
+        min-height: 6rem;
     }
 
     footer p {
         margin-left: 42%;
         font-size: 0.8rem;
+        margin-top: 2rem;
     }
 }
 
