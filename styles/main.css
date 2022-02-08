@@ -90,6 +90,7 @@ li a {
 img {
     height: 16rem;
     width: auto;
+    box-shadow: -2px 2px 5px 0px #444444;
 }
 
 a:hover {
@@ -139,10 +140,11 @@ article {
     padding: 1.5rem;
 }
 
-article:hover {
+.column-article-box article:hover {
     cursor: pointer;
     background-color: whitesmoke;
 }
+
 
 .content-container {
     flex: 2;
@@ -162,12 +164,6 @@ article:hover {
 .column-article-box * {
         margin: 2rem 1rem;
 }
-*/
-
-.column-article-box *:hover {
-    background-color: rgb(228, 228, 228);
-    
-}
 
 footer {
     margin-top: 200px;
@@ -177,6 +173,7 @@ footer {
     flex-direction: row;
     width: 100%;
     background-color: var(--dark-color);
+    height: 5rem;
 }
 
 footer p {
@@ -208,6 +205,11 @@ i:hover {
 
 
 /* Blog Post Specific: */
+
+.blog-article article {
+    display: inline;
+}
+
 section {
     margin-bottom: 10rem;
 }
@@ -270,9 +272,6 @@ td,th {
     border: 2px dotted lightcoral;
     background-color: whitesmoke;
 }
-
-
-
 
 
 @media screen and (max-width: 800px) {
