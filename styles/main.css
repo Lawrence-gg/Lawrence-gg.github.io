@@ -1,5 +1,5 @@
 /* https://unsplash.com/photos/KGzXJB6zneM Ivana Cajina */
-
+/* https://unsplash.com/@pankajpatel CSS PHOTO */
 
 :root {
     --dark-extra-color: #111111;
@@ -22,7 +22,7 @@ body {
 }
 
 h1 {font-size: 4.5rem};
-h2 {font-size: 2.2rem;}
+h2 {font-size: 3.2rem;}
 p {   font-size: 1.2rem;
     text-align: justify;}
 
@@ -48,7 +48,7 @@ header {
     
 }
 
-.photo-credit {
+.photo-credit, .photo-credit a {
     font-size: 1em;
     margin-bottom: 200px;
     color: var(--light-color);
@@ -82,12 +82,15 @@ li * {
     margin: auto 2.5rem;
     padding: 1rem;
 }
-a {
+li a {
     list-style: none;
     color: var(--light-color);
 }
 
-
+img {
+    height: 16rem;
+    width: auto;
+}
 
 a:hover {
     transform: scale(1.0);
@@ -103,13 +106,15 @@ main {
     display: flex;
     flex-direction: row-reverse;
     padding: 1.6rem;
+    margin-bottom: 8rem;
     
 }
-
+/* About me section */
 .about-me {
     flex: 1;
+    margin-top: 2rem;
     margin-left: 24px;
-    margin-bottom: 200px;
+    
 
 }
 .about-me > * {
@@ -123,27 +128,43 @@ main {
     height: auto;
     border-radius: 4px;
 }
+/* ======================*/
+
+.click-article {
+    text-decoration: none;
+}
+
+article {
+    display: flex;
+    padding: 1.5rem;
+}
+
+article:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
 
 .content-container {
     flex: 2;
     display: flex;
+    height: 100vh;
     
+
 }
 
-.column-articles {
+.column-article-box {
     display: flex;
     flex-direction: column;
+     
 }
 
 
-.column-articles * {
-    flex: 1;
-    margin: 5px;
-    padding: 5px;
-    
+.column-article-box * {
+        margin: 2rem 1rem;
 }
+*/
 
-.column-articles *:hover {
+.column-article-box *:hover {
     background-color: rgb(228, 228, 228);
     
 }
