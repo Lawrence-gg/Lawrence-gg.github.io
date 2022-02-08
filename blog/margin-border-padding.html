@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<header>
+    <h1 class="header-title">Padding, Margin, Border</h1>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Home</li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="blog-container">
+        <div class="blog-article">
+            <article>
+                <h3>Article by: Lawrence Goodhead</h3>
+                <table>
+                    <tr>
+                        <th>Acivity</th>
+                        <th>Time
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Read</td>
+                        <td>10 min</td>
+
+                    </tr>
+                    <tr>
+                        <td>Explore</td>
+                        <td>20 min</td>
+
+                    </tr>
+                    <tr>
+                        <td>Supplemental Resources</td>
+                        <td>1 Hour+</td>
+
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <h2 class="blog-title">Intro</h2>
+                <p>
+                    Margin Border and Padding are three core concepts of what is called
+                    the 'Box Model'. This is a <strong><em>must-understand</em></strong> for effective
+                    web design and layout when building a website. To improve as a web developer, it crucial
+                    to have a strong grasp on these concepts. First, we need to make sure we understand what
+                    the box model is.
+                </p>
+            </article>
+            <article>
+                <h2 class="blog-title">The Box Model</h2>
+                <p>What is the Box Model? When Individual elements are created on a website with
+                    HTML, they are organized and arranged as <em>Rectangular boxes</em>. Without rules
+                    added to make these visible, it doesn't neccessarily appear that way, but these boxes
+                    wrap around <strong><em>every single element on the page</em></strong>. On top of this, elements can
+                    also have other boxes <em>inside of them</em> or next to them.
+                </p>
+            </article>
+            <article>
+                <p>
+                    <br>
+                    One way to see this in action is to bring up developer tools
+                    (<strong>right click + inspect</strong> on
+                    Google Chrome). From there, in the <em>styles</em> section, you can search for <strong>"*"</strong>,
+                    to target all elements. From there, you can add a <strong>border</strong> property "Border 3px solid
+                    red;". This draws
+                    an outline around the individual elements and lets you see how they are arranged to make the
+                    complete design that you as the end user actually interact with. Pretty Neat!
+                    <br>
+                </p>
+                <br>
+                <img src="/blog/blog-article-images/Developer-tools-chrome.png"
+                    alt="Demonstration of developer tools in Google Chrome Web browser.">
+
+                <p class="picture-description"><strong>Opening developer tools in Google Chrome Browser to add border
+                        styles.</strong></p>
+
+                <p>As you can see here, we can apply this as a rule to websites to help illustrate their web
+                    element lay out and design.
+                </p>
+                <img src="/blog/blog-article-images/w3schools-box-model.png" alt="Demonstration of the W3School website with 3x solid red borders added on to
+                    show the elements arranged as rectangular boxes.">
+                <p class="picture-description"><strong>Picture: Demonstration of the box model on the W3 Schools web
+                        page.</strong></p>
+                <p>
+                    Finally, you can actually <em>see</em> the box model on developer tools. I like to think about it
+                    from an outside
+                    in point of view, from the outermost to the innermost aspect.<br><br>
+                    The box model uses Margin, Border & Padding to manipulate how the rectangular box is
+                    displayed.<br><br>
+                    <strong>Margin</strong>: This is space outside of the element. I think of it as distance from
+                    <em>other</em> elements, such as a parent box or container.<br>
+                    <strong>Border</strong>: As the name suggests, this is a border around the outside edges of the
+                    element.<br>
+                    <strong>Padding</strong>: This is extra space added <em>within</em> the element. Almost like wearing
+                    a big bulky jacket adds padding to your (human) body :-).<br>
+                    <strong>Content</strong>: Finally, we have the actual defined content within.
+                </p>
+                <img class="box-model" src="/blog/blog-article-images/Box-model.png"
+                    alt="Picture Of Developer tools view of box model">
+            </article>
+            <article>
+                <h2 class="blog-title">Margin</h2>
+                <p>Margin Properties create space outside of the element, pushing it <em>away</em> from other content.
+                    This can be specified in each direction.<br> For example, if we wanted to create rules to make space
+                    6 pixels from the top, 4 pixels from the right, 10 pixels from the bottom and 8 pixels from the
+                    left, we could do that as:<br>
+                    <strong>Margin-top: 6px;</strong><br>
+                    <strong>Margin-right: 4px;</strong><br>
+                    <strong>Margin-bottom: 10px;</strong><br>
+                    <strong>Margin-top: 8px;</strong><br>
+                    <br>
+                    Alternately, there is a <em>shorthand</em> where you can declare margin once, and specify the rules
+                    from
+                    clockwise: <br>
+                    <strong>Margin: 6px 4px 10px 8px;</strong><br>
+                    This may help you keep your code cleaner and more concise, while providing flexibility!
+                </p>
+                <p><strong>Suggested Reading:</strong><a href="https://www.w3schools.com/css/css_margin.asp">W3 School's
+                        guide to margins.</a></p>
+            </article>
+            <article>
+                <h2 class="blog-title">Border</h2>
+                <p>One step in, we have border. This provides ways to specify the style, width and color of an elements
+                    border. Among Other Things!</p>
+
+                <p><strong>Suggested Reading:</strong><a href="https://www.w3schools.com/css/css_border.asp">W3 School's
+                        guide to borders</a></p>
+            </article>
+
+
+        </div>
+    </section>
+
+
+</main>
+<footer>
+    <p>Lawrence Goodhead 2022</p>
+    <i class="fab fa-github-square fa-3x"></i>
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/0276fa61fd.js" crossorigin="anonymous" defer></script>
+
+<body>
+
+</body>
+
+</html>
