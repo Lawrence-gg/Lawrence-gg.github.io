@@ -9,25 +9,39 @@
     --ff-title: 'Domine', serif;
 }
 
-*, *::before,
+*,
+*::before,
 *::after {
-    box-sizing:border-box;
+    box-sizing: border-box;
     line-height: 1.5em;
     margin: 0;
-    
+
 }
 
 body {
-    height: 100%; 
+    height: 100%;
 }
 
-h1 {font-size: 4.5rem};
-h2 {font-size: 3.2rem;}
-p {   font-size: 1.2rem;
-    text-align: justify;}
+h1 {
+    font-size: 4.5rem
+}
+
+;
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
 
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     font-family: var(--ff-primary);
     color: var(--dark-color);
     font-weight: 600;
@@ -40,15 +54,16 @@ h1 {
 
 header {
     background-image: url(/images/ivana-cajina-KGzXJB6zneM-unsplash.jpg);
-    background-position:top;
+    background-position: top;
     background-size: 100% 100%;
     height: 20%;
     background-repeat: no-repeat;
     box-shadow: -2px 2px 5px 0px #444444;
-    
+
 }
 
-.photo-credit, .photo-credit a {
+.photo-credit,
+.photo-credit a {
     font-size: 1em;
     margin-bottom: 200px;
     color: var(--light-color);
@@ -62,7 +77,6 @@ header h1 {
     text-align: center;
     padding-top: 10rem;
     color: var(--light-color);
-    opacity: 0.95;
 }
 
 nav {
@@ -70,10 +84,10 @@ nav {
     height: 4rem;
 }
 
-nav > * {
+nav>* {
     float: top left;
     list-style: none;
-    color: var(--light-color); 
+    color: var(--light-color);
     font-family: var(--ff-primary);
 }
 
@@ -82,6 +96,7 @@ li * {
     margin: auto 2.5rem;
     padding: 1rem;
 }
+
 li a {
     list-style: none;
     color: var(--light-color);
@@ -95,7 +110,7 @@ img {
 
 a:hover {
     transform: scale(1.0);
-    color:coral;
+    color: coral;
     cursor: pointer;
 }
 
@@ -108,14 +123,16 @@ main {
     flex-direction: row-reverse;
     padding: 1.6rem;
     margin-bottom: 8rem;
-    
+
 }
+
 /* About me section */
 .about-me {
     flex: 1;
 }
-.about-me > * {
-    margin: 1rem; 
+
+.about-me>* {
+    margin: 1rem;
     line-height: 2rem;
 }
 
@@ -144,19 +161,19 @@ article {
     flex: 2;
     display: flex;
     height: 100vh;
-    
+
 
 }
 
 .column-article-box {
     display: flex;
     flex-direction: column;
-     
+
 }
 
 
 .column-article-box * {
-        margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 
@@ -172,20 +189,21 @@ footer {
 }
 
 footer p {
-    flex: 9; 
+    flex: 9;
     display: flex;
     align-self: center;
     margin-left: 45%;
     font-size: 0.8rem;
-    color:var(--light-color);
+    color: var(--light-color);
     height: 4%;
 
 }
+
 footer a {
     flex: 1;
     align-self: center;
     width: auto;
-    opacity: 0.9;   
+    opacity: 0.9;
     color: var(--light-color);
     justify-content: center;
 }
@@ -208,11 +226,12 @@ i:hover {
 section {
     margin-bottom: 10rem;
 }
+
 .blog-container {
     display: flex;
     width: 100%;
     justify-content: center;
-    
+
 }
 
 .blog-article {
@@ -225,6 +244,7 @@ section {
     width: 55vw;
     height: auto;
 }
+
 .blog-title {
     font-size: 3rem;
     text-align: left;
@@ -236,7 +256,8 @@ section {
     font-weight: 400;
 }
 
-td,th {
+td,
+th {
     border: 1px solid black;
     font-family: var(--ff-primary);
     text-align: left;
@@ -262,6 +283,7 @@ td,th {
     border-bottom: 3px solid black;
     background-color: whitesmoke;
 }
+
 .border-example2 {
     display: inline;
     border: 2px dotted lightcoral;
@@ -271,11 +293,27 @@ td,th {
 
 @media screen and (max-width: 800px) {
 
+    header {
+        max-height: 500px;
+        background-size: stretch;
+        background-position: bottom;
+        min-width: 100%;
+    }
+
+    .header-title {
+        color: var(--light-color);
+        opacity: 0.95;
+        font-size: 3rem;
+    }
+
+    ;
+
     main {
         flex-direction: column;
-        flex: 1;   
+        flex: 1;
         margin-bottom: 0rem;
     }
+
     main * {
         flex: 1;
         margin-bottom: 2rem;
@@ -287,39 +325,25 @@ td,th {
         margin-bottom: 2rem;
     }
 
+    .about-me>* {
+        margin: 0rem;
+        line-height: 2rem;
+    }
+
     article {
         position: relative;
         display: unset;
     }
-
-    header {
-        max-height: 500px;
-        background-size: stretch;
-        background-position: bottom;
-        min-width: 100%;
-    }
-    .header-title {
-        color: var(--light-color);
-        opacity: 0.95;
-        font-size: 3rem;
-    };
 
     .column-article-box article {
         flex-direction: column;
         align-items: center;
     }
 
-    .about-me > * {
-        margin: 0rem; 
-        line-height: 2rem;
-        
-    }
 
     .column-article-box * {
         margin: 0 0rem;
-}
-
-
+    }
 
     img {
         height: 10rem;
@@ -336,6 +360,3 @@ td,th {
         margin-top: 2rem;
     }
 }
-
-
-
