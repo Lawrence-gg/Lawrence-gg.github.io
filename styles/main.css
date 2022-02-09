@@ -88,7 +88,7 @@ li a {
 }
 
 img {
-    height: 16rem;
+    height: 16vh;
     width: auto;
     box-shadow: -2px 2px 5px 0px #444444;
 }
@@ -114,14 +114,12 @@ main {
 .about-me {
     flex: 1;
     margin-top: 2rem;
-    margin-left: 24px;
     
 
 }
 .about-me > * {
-    margin: 1.2rem 1.6rem;
+    margin: 1rem; 
     line-height: 2rem;
-    
 }
 
 .about-me img {
@@ -129,7 +127,6 @@ main {
     height: auto;
     border-radius: 4px;
 }
-/* ======================*/
 
 .click-article {
     text-decoration: none;
@@ -162,8 +159,9 @@ article {
 
 
 .column-article-box * {
-        margin: 2rem 1rem;
+        margin: 0 1rem;
 }
+
 
 footer {
     margin-top: 200px;
@@ -279,17 +277,24 @@ td,th {
     main {
         flex-direction: column;
         flex: 1;   
-        margin-bottom: 10rem;
+        margin-bottom: 0rem;
     }
     main * {
         flex: 1;
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
+        width: 100%;
     }
 
     .about-me {
         order: 2;
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
     }
+
+    article {
+        position: relative;
+        display: unset;
+    }
+
     header {
         max-height: 500px;
         background-size: stretch;
@@ -301,6 +306,23 @@ td,th {
         opacity: 0.95;
         font-size: 3rem;
     };
+
+    .column-article-box article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me > * {
+        margin: 0rem; 
+        line-height: 2rem;
+        
+    }
+
+    .column-article-box * {
+        margin: 0 0rem;
+}
+
+
 
     img {
         height: 10rem;
