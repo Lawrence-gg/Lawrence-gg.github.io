@@ -40,7 +40,8 @@ p {
 h1,
 h2,
 h3,
-p {
+p
+ {
     font-family: var(--ff-primary);
     color: var(--dark-color);
     font-weight: 600;
