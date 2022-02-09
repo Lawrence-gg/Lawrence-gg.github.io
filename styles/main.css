@@ -98,6 +98,7 @@ li * {
 
 li a {
     list-style: none;
+    text-decoration: none;
     color: var(--light-color);
 }
 
@@ -215,7 +216,6 @@ i:hover {
 
 }
 
-
 /* Blog Post Specific: */
 
 .blog-article article {
@@ -249,8 +249,13 @@ section {
     text-align: left;
 }
 
+.blog-subtitle {
+    font-size: 2rem;
+    text-align: left;
+}
+
 .blog-article p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
     font-weight: 400;
 }
