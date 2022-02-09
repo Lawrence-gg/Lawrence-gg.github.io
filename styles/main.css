@@ -113,9 +113,6 @@ main {
 /* About me section */
 .about-me {
     flex: 1;
-    margin-top: 2rem;
-    
-
 }
 .about-me > * {
     margin: 1rem; 
