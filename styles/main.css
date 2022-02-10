@@ -360,9 +360,12 @@ th {
         position: relative;
     }
 
+    footer i {
+        margin: 1rem;
+    }
+
     footer p {
-        margin-left: 42%;
+        margin: 1rem;
         font-size: 0.8rem;
-        margin-top: 2rem;
     }
 }
