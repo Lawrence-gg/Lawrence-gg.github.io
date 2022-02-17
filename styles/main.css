@@ -5,10 +5,12 @@
     --dark-extra-color: #111111;
     --dark-color: #222222;
     --light-color: #e6e6e6;
+    --accent-color: rgb(200,40,120);
     --ff-primary: 'Raleway', sans-serif;
     --ff-title: 'Domine', serif;
     --ff-trial : 'Lato', sans-serif;
     -webkit-font-smoothing:antialiased;
+
 }
 
 *,
@@ -66,7 +68,7 @@ header {
 }
 
 .accent-color {
-    color :rgb(40, 120, 200);
+    color: var(--accent-color);
 }
 
 .photo-credit,
@@ -87,7 +89,7 @@ header h1 {
 }
 
 nav {
-    background-color: var(--dark-color);
+    background-color: rgb(209,209,209);
     height: 4rem;
 }
 
@@ -99,7 +101,7 @@ nav>* {
 }
 
 li * {
-    float: right;
+    float: left;
     margin: auto 2.5rem;
     padding: 1rem;
 }
@@ -107,7 +109,7 @@ li * {
 li a {
     list-style: none;
     text-decoration: none;
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 
 img {
@@ -118,7 +120,7 @@ img {
 
 a:hover {
     transform: scale(1.0);
-    color: rgb(180,180,180);
+    color: var(--accent-color);
     cursor: pointer;
 }
 
@@ -170,7 +172,6 @@ article {
     display: flex;
     height: 100vh;
 
-
 }
 
 .column-article-box {
@@ -219,7 +220,7 @@ footer a {
 i:hover {
     transform: scale(1.05);
     cursor: pointer;
-    color: coral;
+    color: var(--accent-color);
     opacity: 1;
 
 }
