@@ -8,6 +8,7 @@
     --ff-primary: 'Raleway', sans-serif;
     --ff-title: 'Domine', serif;
     --ff-trial : 'Lato', sans-serif;
+    -webkit-font-smoothing:antialiased;
 }
 
 *,
@@ -20,6 +21,7 @@
 
 body {
     height: 100%;
+    background: whitesmoke;
 }
 
 h1 {
@@ -49,18 +51,22 @@ p
 }
 
 h1 {
-    font-family: var(--ff-title);
-    letter-spacing: 0.2rem;
-    font-weight: 200;
+    font-family: var(--ff-trial);
 }
 
 header {
+    background-color:rgb(209, 209, 209);
+    /*
     background-image: url(/images/ivana-cajina-KGzXJB6zneM-unsplash.jpg);
     background-position: top;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    box-shadow: -2px 2px 5px 0px #444444;
+    box-shadow: -2px 2px 5px 0px #444444; */
 
+}
+
+.accent-color {
+    color :rgb(40, 120, 200);
 }
 
 .photo-credit,
@@ -75,10 +81,9 @@ header {
 }
 
 header h1 {
-    font-family: var(--ff-trial);
-    padding: 4rem 2rem;
+    padding: 3rem 4rem;
     text-align: left;
-    color: white;
+    color: rgb(17, 17, 17);
 }
 
 nav {
@@ -113,7 +118,7 @@ img {
 
 a:hover {
     transform: scale(1.0);
-    color: coral;
+    color: rgb(180,180,180);
     cursor: pointer;
 }
 
@@ -156,7 +161,7 @@ article {
 
 .column-article-box article:hover {
     cursor: pointer;
-    background-color: whitesmoke;
+    background-color: rgb(226, 226, 226);
 }
 
 
@@ -308,8 +313,6 @@ th {
     }
 
     .header-title {
-        color: var(--light-color);
-        opacity: 0.95;
         font-size: 3rem;
     }
 
