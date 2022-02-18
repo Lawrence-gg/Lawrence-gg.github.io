@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1 class="header-title"><span class="accent-color">Javascript</span>Fundamentals</h1>
+        <h1 class="header-title"><span class="accent-color">Javascript</span> Fundamentals</h1>
         <nav>
             <ul>
                 <li><a href="https://lawrence-gg.github.io/blog/blog">About</a></li>
@@ -38,65 +38,70 @@
                     <h3 class="blog-subtitle">An Analogy to describe differences between HTML and CSS</h2>
                         <p>HTML is kind of like a blueprint of information. The information and components that make up
                             a structure, without any of the additional details.
-                            For example: A table. <br>
+                            For example: A table.<br> <br></p>
+                        <img src="/blog/blog-article-images/table-picture.png" alt="A picture of a table">
+                        <p class="picture-description"><strong>Picture: The table in this story</strong></p>
 
-                            Picture of table
+                        <p>Picture of table
                             Picture: Obviously HTML and CSS
                             What is a table really? A surface top. 4 legs. 4 footers. How does it look? How tall is it?
-                            What's it made of? HTML doesn’t know, they have to ask their buddy CSS.
+                            What's it made of? HTML doesn’t know, they have to ask their buddy CSS.</p><br>
 
-                            Where does CSS come in? Our “cascading-style-sheets” give details, styles, and descriptions
+                        <p>Where does CSS come in? Our “cascading-style-sheets” give details, styles, and descriptions
                             of what these components are? Is it a teak surface top? A clear glass top? A plastic camping
                             surface with a coffee stain and scratches? Those legs? Black metal or round wood stained
                             pine? I don’t know much about tables. I’m running out of examples.
                         </p>
-                </article>
 
+                </article>
                 <article>
                     <h3 class="blog-subtitle">Control flow and loops </h3>
                     <p>Computers are… pretty dumb and obedient. Without giving any control flow, the computer will
-                        execute instructions, one after another, without waiting or hesitation.
-                        Program:
-                        Nowaitiwasntreadbutitisstillexecutingwaitnoslowdownimnotreadybuttheprogramisstillgoing
+                        execute instructions, one after another, without waiting or hesitation.<br><br>
+                        <strong>Program:</strong><br><br>
+                        >Nowaitiwasntreadybutitisstillexecutingwaitnoslowdownimnotreadybuttheprogramisstillgoing<br><br>
+                    </p>
 
-                        And DONE. :-) The computer now has a big dumb smile on its face (picture Mark Zuckerberg licking
+                    <p> And DONE. :-) The computer now has a big dumb smile on its face (picture Mark Zuckerberg licking
                         an ice-cream) because it did what you asked it to and in record time too… only 17 milliseconds.
+                    </p><br>
+                    <p> Control flows give order and direction to how a scope of code will execute:</p><br>
 
-
-
-
-
-                        Control flows give order and direction to how a scope of code will execute:
-
-                        Let's make a cup of tea?!?!
-
-                        Fill Kettle with water
-                        Turn the Kettle on
-                        While waiting:
-                        If cup is not yet prepared, then prepare cup and place on your weird HTML/CSS table.
-                        Else: wait patiently for water to boil
-
-                        Once water has boiled and cup is prepared, pour water into cup.
-                        Wait 2.5 minutes
-                        Remove tea bag
-                        Drink
-
-                        In a similar frame, looping is a concept that relies on the computer's obedience. They will do
+                    <p> Let's make a cup of tea.</p><br>
+                    <code>
+                        <ol>
+                            <p>
+                                <li>Fill Kettle with Water</li>
+                                <li>Turn the kettle on</li>
+                                <li>While waiting:</li>
+                                <li>If cup is not yet prepared, then prepare cup and place on your weird HTML/CSS table
+                                </li>
+                                <li>Else: Wait patiently for water to boil</li>
+                                <li>Once water has boiled and cup is prepared, pour water into cup</li>
+                                <li>Wait 2.5 minutes</li>
+                                <li>Remove Tea Bag</li>
+                                <li>Drink</li><br>
+                        </ol>
+                    </code>
+                    <p>In a similar frame, looping is a concept that relies on the computer's obedience. They will
+                        do
                         whatever you ask for them, as long as you ask them, until you ask them to stop.
-                        There are different types of loops:
-                        Do while
-                        For Loops
-                        For Each
+                        There are different types of loops, such as Do While, ForEach, For loops and Recursion among
+                        others. <br><br></p>
 
-                        While (tea is not empty) {
-                        >Take a sip of tea
-                        >Wait 2 seconds
-                        }
+                    <code>
+                        <p>While (tea is not empty) { <br>
+                            Take a sip of Tea <br>
+                            Wait 2 seconds <br>
+                            };<br></p>
+                    </code>
 
-                        This would instruct the computer to take a sip of tea, wait 2 seconds, take a sip of tea, wait 2
-                        seconds.. The exit condition is the cup becoming empty. Only then will the computer move on to
-                        the next step.
-
+                    <p> This would instruct the computer to take a sip of tea, wait 2 seconds, take a sip of
+                        tea,
+                        wait 2
+                        seconds..</p>
+                    <p>The exit condition is the cup becoming empty. Only then will the computer move on to
+                        the next step.</p>
                     </p>
                 </article>
                 <article>
@@ -107,22 +112,36 @@
                         is actually called the Don.
 
                         The DOM is the Document Object Model. Generally, here we will be referring to the HTML DOM,
-                        which is kind of like a tree of objects. This is the structure of information that will be
-                        loaded onto a web page. When a page loads, the Document Object will be loaded and displayed on
-                        the browser. Javascript can weave its magic here, to make pages dynamic by manipulating elements
-                        within the DOM. This could be changing HTML elements, adding css styles, reacting to user input,
-                        etc.
+                        which is kind of like a tree structure containing the layout of the page. This is the structure
+                        of information that will be loaded onto a web page.
+                        When a page loads, the Document Object will be loaded and displayed on the browser. Javascript
+                        can weave its magic here, to make pages dynamic by manipulating elements within the DOM. This
+                        could be changing HTML elements, adding css styles, reacting to user input, etc.
+
                     </p>
                 </article>
                 <article>
                     <h3 class="blog-subtitle">
                         Explain the differences between accessing data from Arrays and Objects
                     </h3>
-                    <p>
-                        If I get stuck on a problem and I cannot manage to find something to ‘unblock myself’ via google
-                        (like on Stack Overflow), I will try and communicate with others for help/to see if I am
-                        approaching the issue in the right way. Other strategies include taking a short break and coming
-                        back to look at the problem with ‘fresh eyes’ to hopefully process and rephrase the issue.
+                    <p>Objects and Arrays are both ways to store collections of data values.
+
+                        In terms of behavior, arrays behave very similar to lists. Lets say you wanted to have a
+                        collection of numbers: 1,2, 3 ,4 and 5.
+                        You could group these together in an Array Variable. Arrays have a set of square brackets
+                        surrounding the structure of data that is held within the array, to group them together.
+                        This is held as a single array object, which you can access the indexes of, to reach a single
+                        value stored within the array.
+                        [1,2,3,4,5].
+
+                        Objects on the other hand, store data with key:value pairs. This provides flexibility, and for
+                        multiple pieces of information to be stored within the same variable.
+                        Let person = {
+                        name : ‘Lawrence’,
+                        Age: 27,
+                        LikesCoffee: true
+                        }
+
                     </p>
                 </article>
                 <article>
@@ -130,8 +149,16 @@
                         Explain what functions are and why they are useful
                     </h3>
                     <p>
-                        Aside from general support, checking in from time to time to make sure everything is okay/voice
-                        any issues or concerns.
+                        Functions are like little sets of instructions or mini-programs within your code block to do
+                        something.
+                        This is a great way to add power and logic into your program, such as a
+                        function to add two numbers together that were generated somewhere else in your code. This
+                        allows better re-usability and the ability to better organize and make your code more modular.
+
+                        Function addTwoNumbers(a,b) {
+                        Return a + b;
+                        }
+
                     </p>
                 </article>
             </div>
