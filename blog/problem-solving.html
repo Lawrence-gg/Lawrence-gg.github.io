@@ -31,10 +31,10 @@
                         encountered before.
                     </p><br>
                     <p>
-                        <strong>First step: take a breath, PHEW!</strong><br>
+                        <strong>First step: take a breath, stay calm! Lets think about this methodically.</strong><br>
                     </p>
                     <p>
-                        Lets look at some effective strategies to
+                        Here are some effective strategies to
                         work on this skillset.
                     </p>
                 </article>
@@ -46,13 +46,10 @@
                         One of the best investments in the problem solving process is taking a moment to understand the
                         problem. What are you trying to solve? What is the desired outcome? What are the inputs?
                         What are the constraints? Giving yourself a moment to read, process and reflect on the task can
-                        be a massive help.
+                        help ensure you are approaching
+                        the problem in the correct direction.
                     </p>
 
-                    <p>
-                        What is the actual problem to solve? What is the desired result or outcome? What are the
-                        constraints? Taking the time to read, process and read the problem.
-                    </p>
                 </article>
                 <article>
                     <h3 class="blog-subtitle">Making a plan</h3>
@@ -65,78 +62,145 @@
                 </article>
                 <article>
                     <h3 class="blog-subtitle">
-                        Explain the differences between accessing data from Arrays and Objects
+                        Pseudocoding
                     </h3>
-                    <p>Objects and Arrays are both ways to store collections of data values.
-
-                        In terms of behavior, arrays behave very similar to lists. Lets say you wanted to have a
-                        collection of numbers: 1,2, 3 ,4 and 5.</p>
-                    <p>You could group these together in an Array Variable. Arrays have a set of square brackets
-                        surrounding the structure of data that is held within the array, to group them together.</p>
                     <p>
-                        This is stored as a single array object, which you can access the indexes of, to reach a single
-                        value stored within the array.<br></p>
-                    <code class="code">let numbersArray = [1,2,3,4,5];</code>
+                        For both of these points, pseudocode is a great technique to break down the problem into
+                        smaller,
+                        more manageable components. This is not actual code, but is a great way to break down the
+                        problem into smaller steps.
+                    </p>
+                    <p>
+                        One popular technique to practice your problem solving is to pseudocode some everyday tasks. Say
+                        you want to make an omelet? How about making a cup of tea? How would you tell a computer to
+                        prepare a bowl of cereal? Why are all my examples about food?
+                    </p>
+                    <p>
+                        <strong>Spanish omelette!</strong>
+                    </p>
 
-                    <p>Objects on the other hand, store data with key:value pairs. This provides flexibility, and
-                        <code class="code" style="display:inline-block">
-                            <ol>
-                                <p>
-                                    <li>Fill Kettle with Water</li>
-                                    <li>Turn the kettle on</li>
-                                    <li>While waiting:</li>
-                                    <li>If cup is not yet prepared, then prepare cup and place on your weird HTML/CSS
-                                        table
-                                    </li>
-                                    <li>Else: Wait patiently for water to boil</li>
-                                    <li>Once water has boiled and cup is prepared, pour water into cup</li>
-                                    <li>Wait 2.5 minutes</li>
-                                    <li>Remove Tea Bag</li>
-                                    <li>Drink</li><br>
-                            </ol>
-                        </code>
-                        for
-                        multiple pieces of information to be stored within the same variable.</p>
-                    <code class="code">
-                        Let person = {
-                        name : ‘Lawrence’,
-                        Age: 27,
-                        LikesCoffee: true
-                        }
+
+                    <code class="code" style="display:inline-block">
+                        <ul>
+                            <li>//Inputs: chopping board, knife, frying pan, stove, ingredients[onions, capsicum,
+                                mushrooms, eggs], bowl, cup, fork, butter,plate
+                            </li>
+                            <li>//Place chopping board on kitchen counter</li>
+                            <li>//for (ingedients.length) if they are not eggs: dice on a chopping board and put
+                                into a
+                                bowl, else crack into
+                                a cup and whisk with a fork.
+                            </li>
+                            <li>//turn on stove and put frying pan on stove</li>
+                            <li>//put butter and ingredients from bowl into fry pan, cook 5 mins</li>
+                            <li>//pour eggs into fry pan, reduce heat and cover top of fry pan, cook further 5 mins
+                            </li>
+                            <li>//turn off stove, pick up fry pan and slide omelette onto plate</li>
+                        </ul>
                     </code>
-                    <p>This allows for far richer attributes of information attached, such as important details making
-                        up a person object.</p>
+
+                    <p>
+                        In a straightforward problem such as this, the pseudocode may seem a bit overkill and silly, but
+                        writing a task into ordered, logical steps, is a good way to develop a plan to solve the
+                        problem.
                     </p>
                 </article>
                 <article>
                     <h3 class="blog-subtitle">
-                        Explain what functions are and why they are useful
+                        Divide and conquer
                     </h3>
                     <p>
-                        Functions are like little sets of instructions or mini-programs within your code block to do
-                        something.</p>
+                        Perhaps you have never made an omelette before? What if we were to make the problem smaller,
+                        more manageable?
+                    </p>
+                    <p><strong>Dividing the problem</strong></p>
+                    <p>We can think about this task as a set of smaller, more manageable sub-problems.</p>
+
+                    <code class="code" style="display:inline-block">
+                        <ul>
+                            <li>//Preparing our ingredients</li>
+                            <li>//Heading our frying pan</li>
+                            <li>//Executing the cooking</li>
+                            <li>//OUTPUT: Cooked omelette</li>
+                        </ul>
+                    </code>
                     <p>
-                        This is a great way to add power and logic into your program, such as a
-                        function to add two numbers together that were generated somewhere else in your code. This
-                        allows better re-usability and the ability to better organize and make your code more
-                        modular.<br>
-                        Initially, a function is declared.
+                        This is taking the overall problem and breaking it down into smaller, easier chunks. From there,
+                        we can think about
+                        what aspect seems easiest or the most simple, and make a start from there.
                     </p><br>
-                    <code class="code">
-                        Function addTwoNumbers(a,b) {
-                        Return a + b;
-                        }
-                    </code><br><br>
-                    <p>Then, the function is called. </p><br>
-                    <code class="code">
-                        addTwoNumbers(2,4) // outputs 6
-                    </code><br><br>
                     <p>
-                        The advantage of this modular instruction being tucked away into its own function is that
-                        addTwoNumbers could be called multiple times in different parts of a program, as required.</p>
-
-
+                        I have prepared ingreidents before, so I will start there.
+                    </p>
+                    <p><strong>THEN:</strong></p>
+                    <p>
+                        I have put a frying pan on the stove and turned it on before, so I will do that next.
+                    </p>
+                    <p><strong>And so on.</strong></p>
+                    <p>
+                        This can be a great approach to make a new task become far more approachable and relative to
+                        existing experience and skills.
+                    </p>
                 </article>
+                <article>
+                    <h3 class="blog-subtitle">Rubber Duck Method</h3>
+                    <p>
+                        The rubber duck method refers to a method of debugging by taking your code and explaining what
+                        it does, line by line, in spoken word. Studies have shown that verbalizing a problem in vocal
+                        language line by line is an effective aid in processing and working through problem solving.
+                    </p>
+                    <p>While the name is called Rubber Ducking, this can be a sympathetic ear such as a co-worker,
+                        friend, colleague or even,
+                        yes, a literal rubber duck. Quite often the act itself of vocally describing the problem can
+                        help bring insight.
+                    </p>
+                </article>
+                <article>
+                    <h3 class="blog-subtitle">Console.logging</h3>
+                    <p>
+                        When writing a piece of code, being able to create and see checkpoints is a great
+                        way to trace the flow of your code and what exactly is being returned and executed.
+                    </p>
+                    <p>
+                        Console logging is a great way to add checkpoints in your code and give indicators of what is
+                        happening. This is one of the most effective tools when developing code to understand line by
+                        line what is happening. This is a method that will return output to the console, without
+                        modifying the execution
+                        of the code itself.
+                    </p>
+                </article>
+                <article>
+                    <h3 class="blog-subtitle">Googling</h3>
+                    <p>
+                        Google is a developer's best friend. In 99.9% cases if you experience a problem with your code,
+                        you are not going to be the first person experiencing that problem! Websites like StackOverFlow,
+                        programming subreddits, programming blogs, documentations from MDN, Javascript.info, YouTube -
+                        There is a mass of information available that you can use to find some direction
+                    </p>
+                    <p>
+                        Stackoverflow is a platform of IT professionals and code enthusiasts to ask and answer questions
+                        about the many quirks and nuances of programming and chances are, there is a highly relevant
+                        thread explaining just what you are looking for!
+                    </p>
+                </article>
+                <article>
+                    <h3 class="blog-subtitle">Asking Peers and Coaches for help</h3>
+                    <p>
+                        If you are still struggling, you might want to also ask your peers or coaches for some guidance.
+                        Sometimes just the act of explaining your problem may have the benefit of giving additional
+                        insight. They also are likely to be working or have solved the exact same problem that you are
+                        asking about! Additionally, learning from how they have approached a problem or might think
+                        about a concept may help to give that ‘A-ha’ moment where it clicks.
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        How do you like to problem solve? Problem
+                        solving is a skill, and the best way
+                        to improve at any skill is <strong>practice!</strong>
+                    </p>
+                </article>
+
             </div>
         </section>
     </main>
