@@ -10,6 +10,7 @@
     --ff-title: 'Domine', serif;
     --ff-trial : 'Lato', sans-serif;
     -webkit-font-smoothing:antialiased;
+    min-height: 100%;
 
 }
 
@@ -22,7 +23,6 @@
 }
 
 body {
-    height: 100%;
     background: whitesmoke;
 }
 
@@ -117,14 +117,13 @@ a:hover {
 }
 
 main {
-    overflow: hidden;
     width: 90%;
     max-width: 100rem;
-    margin: auto;
     display: flex;
     flex-direction: row-reverse;
     padding: 1.6rem;
-    margin-bottom: 8rem;
+    
+
 
 }
 
@@ -180,14 +179,12 @@ article {
 
 
 footer {
-    margin-top: 200px;
-    position: fixed;
-    bottom: 0;
+    margin-top: 60vh;
+    position: absolute;
     display: flex;
     flex-direction: row;
     width: 100%;
     background-color: var(--dark-color);
-    height: 5rem;
 }
 
 footer p {
@@ -323,7 +320,7 @@ th {
     main {
         flex-direction: column;
         flex: 1;
-        margin-bottom: 0rem;
+        
     }
 
     main * {
@@ -363,6 +360,7 @@ th {
     }
 
     footer {
+        
         min-height: 6rem;
         position: relative;
     }
