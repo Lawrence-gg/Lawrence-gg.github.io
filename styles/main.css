@@ -301,8 +301,8 @@ th {
     background-color: whitesmoke;
 }
 
-
-@media screen and (max-width: 800px) {
+/* TABLET LAYOUT  */
+@media screen and (max-width: 768px) {
 
     header {
         max-height: 500px;
@@ -372,5 +372,19 @@ th {
     footer p {
         margin: 1rem;
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        max-height: 500px;
+    }
+
+    nav>* {
+        display: flex;
+    }
+
+    footer {
+        min-height: 200px;
     }
 }
