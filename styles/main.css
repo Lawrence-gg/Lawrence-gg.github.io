@@ -374,7 +374,7 @@ th {
         font-size: 0.8rem;
     }
 }
-
+/* MOBILE RESPONSIVITY */
 @media screen and (max-width: 320px) {
     header {
         max-height: 500px;
